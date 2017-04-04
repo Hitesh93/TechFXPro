@@ -1,0 +1,305 @@
+.my-clock-place {
+  width: 650px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  height: 80px !important;
+  }
+  
+.countitround * {
+  margin: 0;
+  padding: 0;
+  width: 110px !important;
+}
+
+.countitround_days {
+  border-radius: 10px;
+  background-color: #fff; 
+  margin: 0 15px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+}
+
+.canvas_days {
+  display: none;
+}
+.countitround_hours {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 15px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+}
+.canvas_hours {
+  display: none;
+}
+.countitround_minutes {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 15px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+}
+.canvas_minutes {
+  display: none;
+}
+.countitround_seconds {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 15px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+}
+.canvas_seconds {
+  display: none;
+}
+
+.countitround .countitround_days, .countitround .countitround_hours, .countitround .countitround_minutes, .countitround .countitround_seconds {
+  float:none;
+  height: 115px;
+  position: relative;
+  display:inline-block;
+}
+
+.countitround .canvas_days,
+.countitround .canvas_hours, 
+.countitround .canvas_minutes, 
+.countitround .canvas_seconds { 
+    position: relative;
+    z-index: 2;
+}
+
+.countitround .canvas_background {
+    position: absolute;
+    z-index: 1;
+}
+
+.countitround .countitround_days_text, .countitround .countitround_hours_text, .countitround .countitround_minutes_text, .countitround .countitround_seconds_text {
+  color: #0b2330 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  left: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  margin-top: -10px;
+}
+
+.countitround .countitround_seconds_text { 
+   color: #fb5608 !important;
+   }
+   
+.countitround .countitround_days_count, .countitround .countitround_hours_count, .countitround .countitround_minutes_count, .countitround .countitround_seconds_count {
+  color: #0b2330 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 41px !important;
+  font-weight: 800 !important;
+  left: 0;
+  line-height: 80px !important;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  height: 80px !important;
+}
+
+.countitround .countitround_seconds_count { 
+   color: #fb5608 !important;
+   }
+
+.my-clock-place > div:first-child {
+  display: none;
+}
+
+.countitround_days_text, .countitround_hours_text, .countitround_minutes_text, .countitround_seconds_text {
+  position: absolute;
+}
+
+.timer-cont {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 4px;
+  margin: 10px auto 0;
+  padding: 10px 0;
+}
+.countitround_days_count {
+  color:#fff !important;
+}
+.countitround_days_count::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.countitround_days:before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  left: 8px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -10px;
+}
+.countitround_days:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  z-index: 10;
+  top: 40%;
+  width: 9px;
+  height: 24px;
+  background: url(../images/dots.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.countitround_hours_count {
+  color:#fff !important;
+}
+.countitround_hours_count::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+}
+.countitround_hours:before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  left: 8px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -10px;
+}
+.countitround_hours:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  z-index: 10;
+  top: 40%;
+  width: 9px;
+  height: 24px;
+  background: url(../images/dots.png) no-repeat center;
+  background-size: 100% 100%;
+}	
+.countitround_minutes_count {
+  color:#fff !important;
+}
+.countitround_minutes_count::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.countitround_minutes:before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  left: 8px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -10px;
+}
+.countitround_minutes:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  z-index: 10;
+  top: 40%;
+  width: 9px;
+  height: 24px;
+  background: url(../images/dots.png) no-repeat center;
+  background-size: 100% 100%;
+}	
+.countitround_seconds_count {
+  color:#fff !important;
+}
+.countitround_seconds_count::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.countitround_seconds:before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  left: 8px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.countitround_seconds:after {
+  content: "";
+  position: absolute;
+  height: 11px;
+  right: 8px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+.my-clock-place {
+  width: 280px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  height: 60px !important;
+  }
+  
+.countitround * {
+  margin: 0;
+  padding: 0;
+  width: 58px !important;
+}
+
+.countitround_days {
+  margin: 0 5px;
+  height: 60px !important;
+}
+
+.countitround_hours {
+  margin: 0 5px;
+  height: 60px !important;
+}
+
+.countitround_minutes {
+  margin: 0 5px;
+  height: 60px !important;
+}
+
+.countitround_seconds {
+  margin: 0 5px;
+  height: 60px !important;
+}
+
+.countitround .countitround_days_text, .countitround .countitround_hours_text, .countitround .countitround_minutes_text, .countitround .countitround_seconds_text {
+  font-size: 13px !important;
+  margin-top: -20px;
+}
+
+.countitround .countitround_days_count, .countitround .countitround_hours_count, .countitround .countitround_minutes_count, .countitround .countitround_seconds_count {
+  font-size: 30px !important;
+  line-height: 60px !important;
+  height: 60px !important;
+}
+
+.countitround_days:after {
+  background: transparent;
+}
+
+.countitround_hours:after {
+  background: transparent;
+}
+
+.countitround_minutes:after {
+  background: transparent;
+}
+}
